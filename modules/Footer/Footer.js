@@ -1,4 +1,4 @@
-import { Logo } from "../../features/Logo/logo";
+import { Logo } from "../../features/Logo/Logo";
 import { AddContainer } from "../AddContainer";
 
 
