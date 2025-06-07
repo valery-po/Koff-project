@@ -1,7 +1,7 @@
 import 'normalize.css';
 import './style.scss';
 import Navigo from 'navigo';
-import { Header } from './modules/header/header';
+import { Header } from './modules/Header/Header';
 import { Main } from './modules/Main/Main';
 import { Footer } from './modules/footer/footer';
 import { ProductList } from './modules/ProductList/productList';
