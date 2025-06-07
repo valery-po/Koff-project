@@ -1,4 +1,4 @@
-import { Header } from "../../modules/header/header";
+import { Header } from "../../modules/Header/Header";
 import { ApiService } from "../../services/ApiService";
 
 export class CartButton {
