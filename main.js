@@ -4,7 +4,7 @@ import Navigo from 'navigo';
 import { Header } from './modules/Header/Header';
 import { Main } from './modules/Main/Main';
 import { Footer } from './modules/Footer/Footer';
-import { ProductList } from './modules/ProductList/productList';
+import { ProductList } from './modules/ProductList/ProductList';
 import { ApiService } from './services/ApiService';
 import { Catalog } from './modules/Catalog/Catalog';
 import { FavouriteService } from './services/StorageService';
