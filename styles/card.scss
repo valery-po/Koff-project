@@ -1,0 +1,153 @@
+.card {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+    &__link {
+
+        &_img {
+            display: block;
+            margin-bottom: 12px;
+
+
+
+            @media(min-width: 580px) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+        aspect-ratio: 7/6;
+
+        @media(min-width: 580px) {
+            aspect-ratio: 23/20;
+        }
+
+
+        @media(min-width: 820px) {
+            aspect-ratio: 151/125;
+        }
+
+
+
+    }
+
+    &__info {
+        flex-grow: 1;
+
+        @media(min-width: 580px) {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title {
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 4px;
+
+        @media(min-width: 580px) {
+            padding-top: 3px;
+            font-size: 16px;
+            margin-bottom: 0;
+
+        }
+    }
+
+    &__price {
+        font-size: 16px;
+        margin-bottom: 12px;
+
+        @media(min-width: 580px) {
+
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        padding: 12px 24px;
+        color: #780096;
+        border-radius: 32px;
+        border: 1px solid #780096;
+
+        &:hover {
+            color: #fff;
+            border-color: #9200b7;
+            background-color: #9200b7;
+        }
+
+        &:active {
+            color: #c0f;
+            border-color: #c0f;
+            background-color: transparent;
+        }
+
+    }
+
+    &__favourite {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+
+        svg {
+            fill: #fff;
+        }
+
+
+        &:hover,
+        &_active {
+
+            color: #780096;
+
+            svg {
+                fill: #780096;
+            }
+
+        }
+
+        &:active {
+            color: #c0f;
+
+            svg {
+                fill: #c0f;
+            }
+
+        }
+    }
+
+    &__remove-anim {
+        opacity: 0;
+        transform: scale(0.95);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+}
+
+
+
+
+/* styles.css */
+.favourite-msg {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1c1c1c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    opacity: 0.9;
+    z-index: 1000;
+    font-size: 14px;
+}
